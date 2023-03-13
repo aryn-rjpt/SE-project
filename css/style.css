@@ -1,0 +1,56 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header{
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 9vw;
+    height: 18vh;
+    margin: auto -1vw;
+    position: relative;
+    right: 3vw;
+}
+
+#clg-h{
+    font-size: 3.4rem;
+}
+
+/* Navigation Bar */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.5;
+    height: 4vh;
+}
+
+.nav-menu ul{
+    display: flex;
+}
+
+.nav-menu li{
+    list-style: none;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 2vw;
+}
