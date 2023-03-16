@@ -2,9 +2,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-html{
+html {
     width: 100vw;
 }
 
@@ -19,7 +20,7 @@ html{
     margin: 1vw;
 }
 
-ul{
+ul {
     list-style: none;
     margin: 0px 10px;
 }
@@ -64,16 +65,17 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
 .nav-menu li {
     list-style: none;
-} 
+}
 
 .nav-menu a {
     color: white;
     text-decoration: none;
-    font-size: 14px; 
+    font-size: 14px;
     margin: 1.5vw;
-} 
+}
 
 
 /* Central Content */
@@ -101,7 +103,7 @@ nav {
     width: 49vw;
 }
 
-#right-box{
+#right-box {
     width: 26vw;
 
 }
@@ -121,19 +123,110 @@ nav {
 
 #notice-container ul li {
     margin: 1vw 0;
-    list-style:disc;
+    list-style: disc;
 }
 
 
 /* Gallery Caraousel */
-.carousel{
+.carousel {
     margin: 3vw 0vw;
 }
 
-.carousel-inner img{
+.carousel-inner img {
     width: 100vw;
     height: 40vw;
 }
+
+
+/* Faculty Carousel */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.faculty-container{
+    height: 75vh;
+    margin: 1vw 0;
+}
+
+.faculty-container .content{
+    margin-top: 2vw;
+}
+
+.faculty-container .card{
+    height: 50vh;
+    padding: 10px;
+    box-shadow: 1px 1px 14px rgb(74, 74, 74), -1px -1px 14px rgb(74, 74, 74);
+    background: #e7e7e7;
+    border-radius: 25px;
+}
+
+.faculty-container .card .card-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+}
+
+.faculty-container .card-content .image{
+    width: 150px;
+    height: 150px;
+    border: 5px solid yellow;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.faculty-container .card-content img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.faculty-container .card-content .name{
+    margin: 1vw 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.faculty-container .card-content .degree{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.faculty-container .card-content .media-icons{
+    font-size: 30px;
+    margin-top: 3px;
+}
+
+.faculty-container .card-content .media-icons i{
+    margin: 10px;
+    opacity: 0.7;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.faculty-container .card-content .media-icons i:hover{
+    opacity: 1;
+}
+
 
 /* Footer */
 .footer-container {
@@ -150,7 +243,7 @@ nav {
     opacity: 1;
 }
 
-.footer{
+.footer {
     color: white;
     padding: 3vh 5vw;
     display: flex;
@@ -158,7 +251,7 @@ nav {
 
 }
 
-.footer ul{
+.footer ul {
     text-align: left;
     font-size: 1.1rem;
     margin: 0vh 8vw;
@@ -166,7 +259,7 @@ nav {
 
 
 /* Copyright */
-#copyright{
+#copyright {
     width: 100vw;
     height: 2.5vw;
     background-color: black;
