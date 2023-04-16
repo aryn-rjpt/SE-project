@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
 html {
     width: 100vw;
 }
@@ -21,8 +26,8 @@ html {
 }
 
 ul {
-    list-style: none;
     margin: 0px 10px;
+    padding: 0
 }
 
 /* Title Bar */
@@ -54,8 +59,7 @@ nav {
     width: 100vw;
     display: flex;
     justify-content: center;
-    background-color: black;
-    opacity: 0.7;
+    background-color: white;
     height: 3vw;
     padding-top: 0.4vw;
 }
@@ -68,68 +72,92 @@ nav {
 
 .nav-menu li {
     list-style: none;
+    transition: all 0.5s;
+    padding-bottom: 7px;
 }
 
-.nav-menu a {
+.nav-menu li:hover {
     color: white;
+    border-radius: 10px;
+    box-shadow: 100px 0 0 0 black inset, -100px 0 0 0 black inset ;
+}
+
+.nav-menu li:hover a {
+    color: white;
+}
+.nav-menu a {
+    color: black;
     text-decoration: none;
     font-size: 14px;
     margin: 1.5vw;
 }
 
 
+
+
 /* Central Content */
 #central-container {
     display: flex;
+    height: max-content;
+    padding: 10vw 3vw;
+    position: relative;
+    background: black url("https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_960_720.jpg") no-repeat center /cover fixed;
 
 }
+
 
 .box {
-    background-color: rgb(34, 34, 34);
-    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    border: 7px solid #607D8B;
     border-radius: 15px;
-    height: 35vh;
+    height: 56vh;
     margin: 1vw;
     padding: 1vw;
-    list-style: none;
-    color: white;
-}
-
-#left-box {
-    width: 19vw;
-}
-
-#redundant {
-    width: 49vw;
-}
-
-#right-box {
-    width: 26vw;
-
+    color: black;
+    box-shadow: 0vw 0vw 1.25vw 0.1vw white;
 }
 
 
 /* Notice Board */
 
 
-#notice-container {
-    margin-top: 1vw;
+.notice-container {
+    margin: 1vw 0vw 0vw 1vw;
     width: 90%;
     height: 70%;
-    padding: 0.8vw 0;
-    overflow: hidden;
-    overflow-y: scroll;
+    padding: 0.8vw 0vw;
+    overflow: hidden scroll;
 }
 
-#notice-container ul li {
-    margin: 1vw 0;
+.notice-container ul li {
+    margin: 1vw 0vw 0vw 1vw;
     list-style: disc;
+}
+
+#latest-discoveries {
+    width: 19vw;
+}
+
+#announcements {
+    width: 49vw;
+}
+
+#announcements .notice-container{
+    margin: 1vw 0vw 0vw 2vw;
+}
+
+#notice-board {
+    width: 26vw;
 }
 
 
 /* Gallery Caraousel */
-.carousel {
-    margin: 3vw 0vw;
+.carousel h1{
+    margin: 0;
+    padding: 3vw 0vw;
+    background-image: linear-gradient(#686868 36%, #ffffff);
+    color: #000000;
+    box-shadow: 0vw 0vw 3vw 1vw white;
 }
 
 .carousel-inner img {
@@ -142,7 +170,22 @@ nav {
 
 .swiper {
     width: 100%;
-    height: 100%;
+    background: #000 url("/images/faculty-bg.jpg") no-repeat center center/cover fixed;
+    padding: 1vw 0vw 3vw;
+}
+
+
+.swiper h1{
+    margin: 0;
+    padding: 3vw 0vw;
+    background-image: linear-gradient(#686868 36%, #ffffff);
+    color: #000000;
+    box-shadow: 0vw 0vw 3vw 1vw white;
+}
+
+.swiper-wrapper{
+    height: 0;
+    margin-top: 2vw;
 }
 
 .swiper-slide {
@@ -162,16 +205,14 @@ nav {
 }
 
 .faculty-container{
-    height: 75vh;
-    margin: 1vw 0;
+    height: 46vw;
+    padding: 1vw 0;
 }
 
-.faculty-container .content{
-    margin-top: 2vw;
-}
+
 
 .faculty-container .card{
-    height: 50vh;
+    height: max-content;
     padding: 10px;
     box-shadow: 1px 1px 14px rgb(74, 74, 74), -1px -1px 14px rgb(74, 74, 74);
     background: #e7e7e7;
@@ -183,7 +224,7 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;;
+    align-items: center;
 }
 
 .faculty-container .card-content .image{
@@ -228,12 +269,67 @@ nav {
 }
 
 
+/* Useful Links */
+#useful-links{
+    width: 100vw;
+    height: max-content;
+    background: #000;
+    padding: 1vw 0;
+}
+
+
+#useful-links h1{
+    margin: 0;
+    padding: 3vw 0vw;
+    background-image: linear-gradient(#686868 36%, #ffffff);
+    color: #000000;
+    box-shadow: 0vw 0vw 3vw 1vw white;
+}
+
+.useful-links-list{
+    width: 80vw;
+    margin: 5vw auto;
+    height: max-content;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 1vw;    
+    grid-gap: 1vw;
+}
+
+.useful-link{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+.useful-link i{
+    color: white;
+    font-size: 50px;
+}
+
+.useful-link-name{
+    color: white;
+    margin-top: 1vw;
+    transition: all 0.5s;
+}
+
+.useful-link:hover{
+    font-size: 1.2em;
+    text-shadow: 0px 0px 10px #e7e7e7;
+}
+
+
+
+
 /* Footer */
 .footer-container {
     width: 100vw;
     height: 21vw;
     background: #000 url("../images/footer-bg.png") no-repeat center center/cover;
-    /* opacity: 0.9; */
     padding: 3vh 0vh;
 }
 
@@ -255,6 +351,11 @@ nav {
     text-align: left;
     font-size: 1.1rem;
     margin: 0vh 8vw;
+    list-style: none;
+}
+
+.footer ul li:hover{
+    text-shadow: 0px 0px 2px white;
 }
 
 

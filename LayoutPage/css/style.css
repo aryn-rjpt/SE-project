@@ -1,0 +1,113 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.h3-headings {
+    margin-top: 1vw;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.h2-headings {
+    text-align: center;
+    margin: 1vw;
+}
+
+.main-container{
+    background-color: black;
+    display: flex;
+}
+
+.nav-header{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 1vw;
+    height: 100vh;
+}
+
+header{
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw 0vw;
+}
+
+header a img{
+    height: 9vw;
+    width: 17vw;
+}
+
+.navigation{
+    height: 100%;
+    overflow: hidden scroll;
+    padding: 2vw 1vw;
+}
+
+.navigation ul li{
+    list-style:inside;   
+
+}
+
+.main-content{
+    width: 75%;
+    height: 100vh;
+    padding: 3vw 4vw;
+}
+
+.main-content h1{
+    margin-bottom: 3vw;
+}
+
+
+
+/* Footer */
+.footer-container {
+    width: 100vw;
+    height: 21vw;
+    background: #000 url("../images/footer-bg.png") no-repeat center center/cover;
+    padding: 3vh 0vh;
+}
+
+.footer-container hr{
+    margin: 0 12vw;
+    border: 2px solid white;
+    opacity: 1;
+}
+
+.footer {
+    color: white;
+    padding: 3vh 5vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer ul {
+    text-align: left;
+    font-size: 1.1rem;
+    margin: 0vh 8vw;
+    list-style: none;
+}
+
+.footer ul li:hover{
+    text-shadow: 0px 0px 2px white;
+}
+
+
+/* Copyright */
+#copyright {
+    width: 100vw;
+    height: 2.5vw;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+    padding: 0.5vw 0;
+    font-size: 0.8rem;
+}
