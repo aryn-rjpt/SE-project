@@ -15,9 +15,13 @@ html {
 }
 
 .h3-headings {
-    margin-top: 1vw;
     text-align: center;
     font-size: 1rem;
+    background-color: #3a3a5a;
+    height: 4vw;
+    margin: 0vw;
+    padding: 1vw;
+    color: white;
 }
 
 .h2-headings {
@@ -39,6 +43,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 9vw;
 }
 
 #title-bar img {
@@ -101,20 +106,20 @@ nav {
     height: max-content;
     padding: 10vw 3vw;
     position: relative;
-    background: black url("https://cdn.pixabay.com/photo/2016/10/20/18/35/earth-1756274_960_720.jpg") no-repeat center /cover fixed;
+    background: url("../images/container-bg.jpg") no-repeat center /cover fixed;
 
 }
 
 
 .box {
-    background-color: rgb(255, 255, 255);
+    background-color: #e5e9ff;
     border: 7px solid #607D8B;
     border-radius: 15px;
     height: 56vh;
     margin: 1vw;
-    padding: 1vw;
     color: black;
     box-shadow: 0vw 0vw 1.25vw 0.1vw white;
+    position: relative;
 }
 
 
@@ -161,7 +166,7 @@ nav {
 }
 
 .carousel-inner img {
-    width: 100vw;
+    width: 80vw;
     height: 40vw;
 }
 
