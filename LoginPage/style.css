@@ -32,25 +32,40 @@ body {
 
 .box {
     margin: 2vw 2vw;
+    border: 2px solid white;
+    border-radius: 0.6vw;
+    position: relative;
+}
+
+.cred-icons {
+    margin: 1vw;
+    font-size: 1.4rem;
+    position: absolute;
+    top: -0.5vw;
 }
 
 .box input {
-    width: 30vw;
+    width: 32vw;
     height: 3vw;
     font-size: 18px;
     text-align: center;
-    border-radius: 0.6vw;
     background: bottom;
-    border: 2px solid white;
+    border: none;
 }
 
 .box input::placeholder {
     color: white;
 }
 
-.box input:focus {
+.box:focus-within{
     border-color: cornflowerblue;
     background-color: lightgoldenrodyellow;
+    outline: none;
+}
+
+.box input:focus-visible{
+    outline: none;
+    border: none;
 }
 
 .btn {
@@ -96,13 +111,13 @@ body {
     z-index: -1;
 }
 
-.side-image #register{
+.side-image #register {
     color: white;
     text-align: center;
     text-shadow: 0vw 0vw 0vw 1vw white;
 }
 
-.side-image #register:hover{
+.side-image #register:hover {
     text-decoration: underline;
     cursor: pointer
 }

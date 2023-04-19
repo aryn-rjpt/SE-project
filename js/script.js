@@ -10,3 +10,10 @@ var swiper = new Swiper(".mySwiper", {
         pauseOnMouseEnter: true,
     }
 });
+
+
+// Loader
+let loader = document.getElementById('myLoader')
+window.addEventListener('load', function(){
+    loader.style.display = 'none';
+})

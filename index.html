@@ -25,25 +25,79 @@
 </head>
 
 <body>
+    <div class="loader" id="myLoader">
+        <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+                <div class="hamster__body">
+                    <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                    </div>
+                    <div class="hamster__limb hamster__limb--fr"></div>
+                    <div class="hamster__limb hamster__limb--fl"></div>
+                    <div class="hamster__limb hamster__limb--br"></div>
+                    <div class="hamster__limb hamster__limb--bl"></div>
+                    <div class="hamster__tail"></div>
+                </div>
+            </div>
+            <div class="spoke"></div>
+        </div>
+    </div>
     <!-- Header -->
     <header>
         <div id="title-bar">
             <img src="images/logo.png" alt="Astronomy College">
             <h1>Arts College of India</h1>
+            <div id="login" class="app-header-account display-flex flex-items-center tablet:margin-left-2xl">
+                <a href="./LoginPage/login.html" class="button flat swap-icons" aria-label="Sign In"
+                    data-balloon-pos="left">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="right-to-bracket" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                        class="initial-icon svg-inline--fa fa-right-to-bracket fa-xl">
+                        <path fill="currentColor"
+                            d="M192 365.8L302 256 192 146.2l0 53.8c0 13.3-10.7 24-24 24L48 224l0 64 120 0c13.3 0 24 10.7 24 24l0 53.8zM352 256c0 11.5-4.6 22.5-12.7 30.6L223.2 402.4c-8.7 8.7-20.5 13.6-32.8 13.6c-25.6 0-46.4-20.8-46.4-46.4l0-33.6-96 0c-26.5 0-48-21.5-48-48l0-64c0-26.5 21.5-48 48-48l96 0 0-33.6c0-25.6 20.8-46.4 46.4-46.4c12.3 0 24.1 4.9 32.8 13.6L339.3 225.4c8.1 8.1 12.7 19.1 12.7 30.6zm-8 176l80 0c22.1 0 40-17.9 40-40l0-272c0-22.1-17.9-40-40-40l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l80 0c48.6 0 88 39.4 88 88l0 272c0 48.6-39.4 88-88 88l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24z"
+                            class="">
+                        </path>
+                    </svg>
+                    <p style="text-align: center;">Login</p>
+                </a>
+            </div>
         </div>
         <nav>
             <div class="nav-menu">
                 <ul>
-                    <li><a href="../LayoutPage/index.html">About</a></li>
-                    <li><a href="../LayoutPage/index.html">Administration</a></li>
-                    <li><a href="../LayoutPage/index.html">Academics</a></li>
-                    <li><a href="../LayoutPage/index.html">Facilities</a></li>
-                    <li><a href="../LayoutPage/index.html">Students' Corner</a></li>
-                    <li><a href="../LayoutPage/index.html">Infrastructure</a></li>
-                    <li><a href="../LayoutPage/index.html">Admission</a></li>
-                    <li><a href="../LayoutPage/index.html">Additional Courses</a></li>
-                    <li><a href="../LayoutPage/index.html">Research & Innovation</a></li>
-                    <li><a href="../LayoutPage/index.html">Achievements</a></li>
+                    <li><a href="../LayoutPage/index.html">About &nbsp;<i class="fa-sharp fa-solid fa-caret-down my-arrow"></i>
+                        </a>
+                    </li>
+                    <li><a href="../LayoutPage/index.html">Administration &nbsp;<i class="fa-sharp fa-solid fa-caret-down my-arrow"></i>
+                        </a>
+                    </li>
+                    <li><a href="../LayoutPage/index.html">Academics &nbsp;<i class="fa-sharp fa-solid fa-caret-down my-arrow"></i>
+                        </a>
+                    </li>
+                    <li><a href="../LayoutPage/index.html">Facilities &nbsp;<i class="fa-sharp fa-solid fa-caret-down my-arrow"></i>
+                        </a>
+                    </li>
+                    <li><a href="../LayoutPage/index.html">Students' Corner &nbsp;<i class="fa-sharp fa-solid fa-caret-down my-arrow"></i>
+                        </a>
+                    </li>
+                    <li><a href="../LayoutPage/index.html">Infrastructure &nbsp;<i class="fa-sharp fa-solid fa-caret-down my-arrow"></i>
+                        </a>
+                    </li>
+                    <li><a href="../LayoutPage/index.html">Admission &nbsp;<i class="fa-sharp fa-solid fa-caret-down my-arrow"></i>
+                        </a>
+                    </li>
+                    <li><a href="../LayoutPage/index.html">Additional Courses &nbsp;<i class="fa-sharp fa-solid fa-caret-down my-arrow"></i>
+                        </a>
+                    </li>
+                    <li><a href="../LayoutPage/index.html">Research & Innovation &nbsp;<i class="fa-sharp fa-solid fa-caret-down my-arrow"></i>
+                        </a>
+                    </li>
+                    <li><a href="../LayoutPage/index.html">Achievements &nbsp;<i class="fa-sharp fa-solid fa-caret-down my-arrow"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -116,23 +170,23 @@
             <div class="carousel-item active">
                 <img src="./images/1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>There is a planet made of Diamonds.</h5>
-                    <p>The "super earth," aka 55 Cancri e, is most likely covered in graphite and diamond.</p>
+                    <h5 style="color: black">Every artist was first an amateur.</h5>
+                    <p style="color: black"> - Harshita Gola </p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="./images/2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Neutron stars can spin 600 times per second.</h5>
-                    <p>The densest and tiniest stars in the known universe and with a radius of just about 10 km, they
-                        may have mass of few times that of the Sun.</p>
+                    <h5 style="color: black">Art is anything you can get away with.</h5>
+                    <p style="color: black"> - Ritik Manav</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="./images/3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Dark matter accounts for 85% of the Universe</h5>
-                    <p>It is five times more prevalent than ordinary matter.</p>
+                    <h5>You do not just wake up and become a butterfly,
+                        growth is a process.</h5>
+                    <p> - Aryan Rajput</p>
                 </div>
             </div>
         </div>
@@ -340,43 +394,43 @@
     <section id="useful-links">
         <h1 style="text-align: center;">Useful Links</h1>
         <div class="useful-links-list">
-           <a href="../LayoutPage/index.html" class="useful-link">
+            <a href="../LayoutPage/index.html" class="useful-link">
                 <i class="fa-solid fa-user-graduate"></i>
                 <span class="useful-link-name">Courses</span>
             </a>
-           <a href="../LayoutPage/index.html" class="useful-link">
+            <a href="../LayoutPage/index.html" class="useful-link">
                 <i class="fa-solid fa-laptop-file"></i>
                 <span class="useful-link-name">Resources</span>
             </a>
-           <a href="../LayoutPage/index.html" class="useful-link">
+            <a href="../LayoutPage/index.html" class="useful-link">
                 <i class="fa-solid fa-award"></i>
                 <span class="useful-link-name">Achievements</span>
             </a>
-           <a href="../LayoutPage/index.html" class="useful-link">
+            <a href="../LayoutPage/index.html" class="useful-link">
                 <i class="fa-solid fa-building-columns"></i>
                 <span class="useful-link-name">Infrastructure</span>
             </a>
-           <a href="../LayoutPage/index.html" class="useful-link">
+            <a href="../LayoutPage/index.html" class="useful-link">
                 <i class="fa-solid fa-school-flag"></i>
                 <span class="useful-link-name">History</span>
             </a>
-           <a href="../LayoutPage/index.html" class="useful-link">
+            <a href="../LayoutPage/index.html" class="useful-link">
                 <i class="fa-solid fa-graduation-cap"></i>
                 <span class="useful-link-name">Alumnus</span>
             </a>
-           <a href="../LayoutPage/index.html" class="useful-link">
+            <a href="../LayoutPage/index.html" class="useful-link">
                 <i class="fa-solid fa-atom"></i>
                 <span class="useful-link-name">Research</span>
             </a>
-           <a href="../LayoutPage/index.html" class="useful-link">
+            <a href="../LayoutPage/index.html" class="useful-link">
                 <i class="fa-solid fa-book-open"></i>
                 <span class="useful-link-name">E-Library</span>
             </a>
-           <a href="../LayoutPage/index.html" class="useful-link">
+            <a href="../LayoutPage/index.html" class="useful-link">
                 <i class="fa-solid fa-microscope"></i>
                 <span class="useful-link-name">Labs</span>
             </a>
-           <a href="../LayoutPage/index.html" class="useful-link">
+            <a href="../LayoutPage/index.html" class="useful-link">
                 <i class="fa-solid fa-masks-theater"></i>
                 <span class="useful-link-name">Societies</span>
             </a>
@@ -384,7 +438,7 @@
             </div>
             <div class="useful-link">
             </div>
-           <a href="../LayoutPage/index.html" class="useful-link">
+            <a href="../LayoutPage/index.html" class="useful-link">
                 <i class="fa-regular fa-bell"></i>
                 <span class="useful-link-name">Time Table</span>
             </a>
@@ -398,36 +452,68 @@
             <div class="quick-links">
                 <h2 class="h2-headings">Quick Links</h2>
                 <ul>
-                    <a href="../LayoutPage/index.html"><li>Our Astronauts</li></a>
-                    <a href="../LayoutPage/index.html"><li>Work with us</li></a>
-                    <a href="../LayoutPage/index.html"><li>Ranking</li></a>
-                    <a href="../LayoutPage/index.html"><li>Departments</li></a>
-                    <a href="../LayoutPage/index.html"><li>Faculty</li></a>
+                    <a href="../LayoutPage/index.html">
+                        <li>Our Astronauts</li>
+                    </a>
+                    <a href="../LayoutPage/index.html">
+                        <li>Work with us</li>
+                    </a>
+                    <a href="../LayoutPage/index.html">
+                        <li>Ranking</li>
+                    </a>
+                    <a href="../LayoutPage/index.html">
+                        <li>Departments</li>
+                    </a>
+                    <a href="../LayoutPage/index.html">
+                        <li>Faculty</li>
+                    </a>
                 </ul>
             </div>
             <div class="explore">
                 <h2 class="h2-headings">Explore Planets</h2>
                 <ul>
-                    <a href="../LayoutPage/index.html"><li>LHS 475 b</li></a>
-                    <a href="../LayoutPage/index.html"><li>AS 209</li></a>
-                    <a href="../LayoutPage/index.html"><li>Ross 508b</li></a>
-                    <a href="../LayoutPage/index.html"><li>HD 110082 b</li></a>
-                    <a href="../LayoutPage/index.html"><li>WASP-189b</li></a>
+                    <a href="../LayoutPage/index.html">
+                        <li>LHS 475 b</li>
+                    </a>
+                    <a href="../LayoutPage/index.html">
+                        <li>AS 209</li>
+                    </a>
+                    <a href="../LayoutPage/index.html">
+                        <li>Ross 508b</li>
+                    </a>
+                    <a href="../LayoutPage/index.html">
+                        <li>HD 110082 b</li>
+                    </a>
+                    <a href="../LayoutPage/index.html">
+                        <li>WASP-189b</li>
+                    </a>
                 </ul>
             </div>
             <div class="contact-us">
                 <h2 class="h2-headings">Contact Us</h2>
                 <ul>
-                    <a href="../LayoutPage/index.html"><li>Location: Out of your reach</li></a>
-                    <a href="../LayoutPage/index.html"><li>E-mail: admin@aci.com</li></a>
-                    <a href="../LayoutPage/index.html"><li>Phone: 99999 99999</li></a>
-                    <a href="../LayoutPage/index.html"><li>Some place</li></a>
-                    <a href="../LayoutPage/index.html"><li>Can't Connect?</li></a>
+                    <a href="../LayoutPage/index.html">
+                        <li>Location: Out of your reach</li>
+                    </a>
+                    <a href="../LayoutPage/index.html">
+                        <li>E-mail: admin@aci.com</li>
+                    </a>
+                    <a href="../LayoutPage/index.html">
+                        <li>Phone: 99999 99999</li>
+                    </a>
+                    <a href="../LayoutPage/index.html">
+                        <li>Some place</li>
+                    </a>
+                    <a href="../LayoutPage/index.html">
+                        <li>Can't Connect?</li>
+                    </a>
                 </ul>
             </div>
         </div>
         <hr>
     </section>
+
+
 
 
     <!--Copytight-->
@@ -451,4 +537,3 @@
 </body>
 
 </html>
-
