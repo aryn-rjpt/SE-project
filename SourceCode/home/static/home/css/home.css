@@ -401,7 +401,7 @@ ul {
 }
 
 #title-bar img {
-    width: 9vw;
+    width: 6vw;
     height: 18vh;
     margin: auto -1vw;
     position: relative;
@@ -434,6 +434,13 @@ nav {
     padding-top: 0.4vw;
 }
 
+.nav-menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 1.5vw;
+}
+
 .nav-menu ul {
     display: flex;
     align-items: center;
@@ -445,24 +452,14 @@ nav {
     transition: all 0.5s;
     padding-bottom: 7px;
     position: relative;
+    border-radius: 10px;
 }
 
 .nav-menu li:hover {
     color: white;
-    border-radius: 10px;
-    box-shadow: 100px 0 0 0 black inset, -100px 0 0 0 black inset;
+    box-shadow: 100px 0 0 0 white inset, -100px 0 0 0 white inset;
 }
 
-.nav-menu li a:hover {
-    color: white;
-}
-
-.nav-menu a {
-    color: black;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 1.5vw;
-}
 
 .my-arrow {
     position: absolute;
@@ -473,12 +470,20 @@ nav {
     position: absolute;
     display: none;
     overflow: auto;
-    z-index: 100;
+    z-index: 10;
+    padding: 13px;
+    background: rgba(176, 176, 236, .3);
+}
+
+.dropdown-list{
+    display: flex;
+    flex-direction: column;
+    line-height: 0vw;
+    width: max-content;
 }
 
 .nav-menu li:hover .dropdown{
     display: block;
-    color: black;
 }
 
 

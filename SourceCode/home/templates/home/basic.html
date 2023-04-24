@@ -32,7 +32,7 @@
     <style>
         /* Footer Styling */
         .myfooter {
-            background-color: #c8c8c8;
+            background: #c8c8c8 url("../../static/home/images/footer-bg.webp") no-repeat center center/cover;
             border-radius: 1vw;
             width: 80vw;
             height: fit-content;
@@ -53,7 +53,8 @@
             padding: 1vw;
         }
 
-        .footer-content h3,h2 {
+        .footer-content h3,
+        h2 {
             text-align: center;
             margin: 1vw;
             font-weight: bold;
@@ -67,13 +68,15 @@
             height: 9vw;
         }
 
-        .footer-col{
+        .footer-col {
             padding: 1vw;
         }
 
-    
+
         .footer-col li {
             list-style: none;
+            font-family: cursive;
+            text-shadow: 0px 0px 1px black;
         }
 
         .footer-col li:hover {
@@ -201,7 +204,7 @@
 
         // Footer JS
         $(window).scroll(function () {
-            if ($(window).scrollTop() + $(window).height() + 100 >= $(document).height()) {
+            if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
                 $('.myfooter').css('bottom', '5vw');
             }
             else {
