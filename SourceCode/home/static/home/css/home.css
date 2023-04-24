@@ -27,10 +27,6 @@ html {
     border-radius: 0.5vw;
 }
 
-.h2-headings {
-    text-align: center;
-    margin: 1vw;
-}
 
 ul {
     margin: 0px 10px;
@@ -395,7 +391,7 @@ ul {
 /* Title Bar */
 #title-bar {
     width: 100vw;
-    background: #000 url('../images/TitleBG.jpg') no-repeat center center/cover;
+    background: #000 url('../images/TitleBG.webp') no-repeat center center/cover;
     opacity: 0.9;
     color: white;
     display: flex;
@@ -433,7 +429,7 @@ nav {
     width: 100vw;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: #b0b0ec;
     height: 3vw;
     padding-top: 0.4vw;
 }
@@ -492,7 +488,7 @@ nav {
     height: max-content;
     padding: 5vw 3vw;
     position: relative;
-    background: url("../images/container-bg.jpg") no-repeat center /cover fixed;
+    background: url("../images/container-bg.webp") no-repeat center /cover fixed;
 
 }
 
@@ -561,7 +557,7 @@ nav {
 
 .swiper {
     width: 100%;
-    background: url("../images/faculty-bg.jpg") no-repeat center center/cover fixed;
+    background: url("../images/faculty-bg.webp") no-repeat center center/cover fixed;
     padding: 1vw 0vw 3vw;
 }
 
@@ -664,7 +660,7 @@ nav {
 #useful-links {
     width: 100vw;
     height: max-content;
-    background: #000 url("../images/useful-links-bg.jpg") no-repeat center center /cover;
+    background: #000 url("../images/useful-links-bg.webp") no-repeat center center /cover;
     /* background: #000; */
     padding: 1vw 0;
 }
@@ -718,10 +714,20 @@ nav {
 
 
 /* Footer */
-.footer-container {
+
+
+.myfooter{
+    width: inherit;
+    height: 10vw;
+    border: 2px solid cyan;
+}
+
+
+
+/* .footer-container {
     width: 100vw;
     height: 21vw;
-    background: #000 url("../images/footer-bg.jpg") no-repeat center center/cover;
+    background: #000 url("../images/footer-bg.webp") no-repeat center center/cover;
     padding: 3vh 0vh;
 }
 
@@ -745,10 +751,10 @@ nav {
     margin: 0vh 8vw;
     list-style: none;
 }
+ */
 
-.footer ul li:hover {
-    text-shadow: 0px 0px 2px white;
-}
+
+
 
 
 /* Copyright */
