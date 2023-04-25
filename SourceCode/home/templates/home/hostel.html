@@ -1,0 +1,133 @@
+{% extends 'home/layout.html' %}
+
+{% block title %} Hostel {% endblock %}
+
+
+{% block nav_list %}
+
+
+<ul>
+    <li class="mybtn" id="administration-btn">
+        <i class="fa-regular fa-eye"></i>&nbsp; Hostel Administration
+    </li>
+    <li class="mybtn" id="criteria-btn">
+        <i class="fa-regular fa-eye"></i>&nbsp; Admission Criteria
+    </li>
+    <li class="mybtn" id="procedure-btn">
+        <i class="fa-regular fa-eye"></i>&nbsp; Admission Procedure
+    </li>
+    <li class="mybtn" id="contact-btn">
+        <i class="fa-regular fa-eye"></i>&nbsp; Contact
+    </li>
+</ul>
+
+{% endblock %}
+
+
+{% block sub_heading %}
+Hostel
+{% endblock %}
+
+
+
+{% block content %}
+<p>Bequeathed to the sacred memory of XYZ , the late founder Principal of Art College of India, Delhi, established Art
+    College Of India, Delhi in June 1989.<br>
+    As a symbol of dedication to the cause of education and excellence, Art College Of India Hostel was established in
+    the year 1995 under the able guidance of the then Principal XYZ . The Hostel has a spacious campus, with 128 well
+    furnished Rooms and well equipped Dining Hall, a Common Room, Kitchen and arrangements for indoor games & gymnasium.
+    The Hostel also has a well furnished Visitor's Room and a Guest Room. It provides accommodation to about 200
+    undergraduate male students and 200 female students drawn from all strata of the society. Hot/cold water is
+    available in bathrooms. Power backup is available 24 hours a day in the hostel from a generator of 62.5 KVA
+    capacity.</p>
+
+<div class="details-wrapper">
+    <div id="administration" class="temp">
+        <h1>Administration</h1>
+        <p>The Hostel is managed by the Warden and Deputy Warden on behalf of the Principal. General policy matters
+            regarding the governance of the Hostel are formulated by the Hostel Committee with the Warden as convener.
+            Day-to-Day working of the Hostel is supervised by the Hostel Manager and the accounts and office matters are
+            looked after by the Hostel Assistant/Accountant.</p>
+    </div>
+
+    <div id="criteria" class="temp">
+        <h1>Admission Criteria</h1>
+        <p>Admission to the Hostel is granted on the basis of academic merit and interview. Only undergraduate male
+            students, who secured admission to the College, are eligible to apply for Hostel accommodation provided
+            their
+            parents are not residing in Delhi or its neighborhood. i.e. National Capital Region (NCR). Admission to the
+            Hostel cannot be claimed as a matter of right by any student admitted to the College or even by those who
+            have
+            been residents in the preceding years. All admissions to the Hostel are considered afresh. <br>
+
+            Readmission to the Hostel may be denied in subsequent year of study in the College if:
+
+            1. There is a record of displinary action against him for any act of omission, violation of the Hostel
+            rules,
+            breach of hostel discipline, act of wanton vandalism, deliberate mischief of non-payment of Hostel dues on
+            time.
+
+            2. He has failed to secure 75% attendance in lectures and tutorials/Practicals.
+        </p>
+    </div>
+
+    <div id="procedure" class="temp">
+        <h1>Admission Procedure</h1>
+        <p>First year Undergraduate Students, who wish to apply for admission to the Hostel, are required to submit the
+            prescribed application form, duly complete in all respects, to the Hostel office as per the Admission
+            Schedule.
+            They are required to appear in person for an interview before the Interview Committee to be held in the
+            Hostel
+            on the scheduled date and time. The local guardian must submit a proof of residence in Delhi and an approved
+            photo Identity Card.
+        </p>
+    </div>
+
+    <div id="contact" class="temp">
+        <h1>Contact</h1>
+
+        <div style="display: flex; justify-content: space-around; font-size: 1.5em;">
+            <div id="warden">
+                <div>Warden: Dr. XYZ</div>
+                <div>Email: huphup@gmail.com</div>
+            </div>
+            <div id="deputeWarden">
+                <div>Deputy Warden: Dr. ABC</div>
+                <div>Email: bupbup@gmail.com</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+
+{% block myJS %}
+<script>
+    $('.mybtn').click(function(){
+        $('.mybtn i').removeClass('fa-solid').addClass('fa-regular')
+        $(this).children('i').toggleClass("fa-regular").addClass("fa-solid");
+    })
+
+    $("#administration-btn").click(function () {
+        $('#administration').fadeIn(2000).siblings().css("display","none");
+
+    })
+    $("#criteria-btn").click(function () {
+        $('#criteria').fadeIn(2000).siblings().css("display","none");
+        
+    })
+    $("#procedure-btn").click(function () {
+        $('#procedure').fadeIn(2000).siblings().css("display","none");
+        
+    })
+    $("#contact-btn").click(function () {
+        $('#contact').fadeIn(2000).siblings().css("display","none");
+        
+    })
+</script>
+
+{% endblock %}

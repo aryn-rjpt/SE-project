@@ -1,9 +1,22 @@
 /* CSS Reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+body{    
+    background-color: black;
 }
 
 .h3-headings {
@@ -17,20 +30,20 @@
     margin: 1vw;
 }
 
-.main-container{
-    background-color: black;
+.main-container {
     display: flex;
+    height: fit-content;
 }
 
-.nav-header{
+.nav-header {
     display: flex;
     flex-direction: column;
     width: 25%;
     padding: 1vw;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
-header{
+header {
     height: 10vw;
     display: flex;
     align-items: center;
@@ -38,36 +51,67 @@ header{
     margin: 1vw 0vw;
 }
 
-header a img{
+header a img {
     height: 9vw;
-    width: 17vw;
+    width: 7vw;
 }
 
-.navigation{
+.navigation {
     height: 100%;
-    overflow: hidden scroll;
     padding: 2vw 1vw;
 }
 
-.navigation ul li{
-    list-style:inside;   
-
+.navigation li{
+    list-style: none;
+    margin: 1vw 0;
+    font-size: 1.2rem;
 }
 
-.main-content{
+.navigation ul li:hover {
+    cursor: pointer;
+}
+
+.main-content {
     width: 75%;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 3vw 4vw;
 }
 
-.main-content h1{
+.main-content h1 {
+    margin-top: 3vw;
     margin-bottom: 3vw;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+    text-align: center;
+    margin: 1vw;
+    font-weight: bold;
+    color: #e5fbff;
+    font-family: cursive;
+    text-shadow: 0vw 0vw 1vw black;
+    text-decoration: underline;
+}
+
+.temp{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.siblings{
+    display: none;
+}
 
 
 /* Footer */
-.footer-container {
+/* .footer-container {
     width: 100vw;
     height: 21vw;
     background: #000 url("../images/footer-bg.jpg") no-repeat center center/cover;
@@ -97,11 +141,11 @@ header a img{
 
 .footer ul li:hover{
     text-shadow: 0px 0px 2px white;
-}
+} */
 
 
 /* Copyright */
-#copyright {
+/* #copyright {
     width: 100vw;
     height: 2.5vw;
     background-color: black;
@@ -110,4 +154,4 @@ header a img{
     text-align: center;
     padding: 0.5vw 0;
     font-size: 0.8rem;
-}
+} */

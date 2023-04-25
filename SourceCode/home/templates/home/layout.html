@@ -7,19 +7,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACI</title>
+    <title>{% block title %} {% endblock %}</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
     <!-- Font awesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
     <!--  My CSS -->
     <link rel="stylesheet" href="{% static 'home/css/layout.css' %}">
@@ -33,12 +33,25 @@
             <header>
                 <div class="logo">
                     <a href="../index.html" title="logo made using designevo.com">
-                        <img src="{% static 'home/images/layout-logo.png' %}" alt=""></a>
+                        <img src="{% static 'home/images/logo.png' %}" alt=""></a>
+                    <h3>ACI</h3>
                 </div>
             </header>
 
             <div class="navigation">
 
+                {% block nav_list %}
+
+                <!-- <h3>Sub Heading</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
 
                 <h3>Sub Heading</h3>
                 <ul>
@@ -50,36 +63,30 @@
                     <li>Lorem ipsum dolor sit amet.</li>
                     <li>Lorem ipsum dolor sit amet.</li>
                 </ul>
+                <h3>Sub Heading</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul> -->
 
-                <h3>Sub Heading</h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-                <h3>Sub Heading</h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
+                {% endblock %}
             </div>
         </div>
 
 
         <div class="main-content">
             <h1>
-                This is a heading
+                {% block sub_heading %}
+                <!-- This is a heading -->
+                {% endblock %}
             </h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, molestias cupiditate! Vero,
+            {% block content %}
+            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, molestias cupiditate! Vero,
                 reiciendis. Molestiae minus inventore libero sunt quia accusantium, animi, enim accusamus tempora, ipsam
                 cum! Velit inventore nesciunt pariatur voluptate maxime nemo distinctio voluptates, corporis sunt
                 eligendi molestias assumenda quidem qui. Tempore distinctio officiis cupiditate porro laudantium! Vel,
@@ -98,12 +105,13 @@
                 reiciendis. Molestiae minus inventore libero sunt quia accusantium, animi, enim accusamus tempora, ipsam
                 cum! Velit inventore nesciunt pariatur voluptate maxime nemo distinctio voluptates, corporis sunt
                 eligendi molestias assumenda quidem qui. Tempore distinctio officiis cupiditate porro laudantium! Vel,
-                tenetur.</p>
+                tenetur.</p> -->
+            {% endblock %}
         </div>
     </div>
 
     <!-- Footer -->
-    <section class="footer-container">
+    <!-- <section class="footer-container">
         <hr>
         <div class="footer">
             <div class="quick-links">
@@ -138,13 +146,13 @@
             </div>
         </div>
         <hr>
-    </section>
+    </section> -->
 
 
     <!--Copytight-->
-    <section id="copyright">
+    <!-- <section id="copyright">
         <p>Copyright &copy; ACI, All rights reserved.</p>
-    </section>
+    </section> -->
 
 
 
@@ -153,8 +161,9 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- My JS -->
+    {% block myJS %}
+    {% endblock %}
 
 
 </body>

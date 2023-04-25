@@ -401,7 +401,7 @@ ul {
 }
 
 #title-bar img {
-    width: 6vw;
+    width: 7vw;
     height: 18vh;
     margin: auto -1vw;
     position: relative;
@@ -486,6 +486,9 @@ nav {
     display: block;
 }
 
+.dropdown-list span:hover{
+    font-weight: bold;
+}
 
 /* Central Content */
 #central-container {
