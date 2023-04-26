@@ -2,24 +2,52 @@
 
 {% block title %} Hostel {% endblock %}
 
+<!-- {% block css %}
+<style>
+    
+</style>
+{% endblock %} -->
+
 
 {% block nav_list %}
-
-
 <ul>
-    <li class="mybtn" id="administration-btn">
-        <i class="fa-regular fa-eye"></i>&nbsp; Hostel Administration
+    <li><a href="/campus"><i class="fa-brands fa-slack"></i>
+        <h3> Campus</h3>
+    </a></li>
+    <li><i class="fa-brands fa-slack"></i>
+        <h3> Hostel</h3>
+
+        <ul>
+            <li class="mybtn" id="administration-btn">
+                <i class="fa-regular fa-eye"></i>&nbsp; Hostel Administration
+            </li>
+            <li class="mybtn" id="criteria-btn">
+                <i class="fa-regular fa-eye"></i>&nbsp; Admission Criteria
+            </li>
+            <li class="mybtn" id="procedure-btn">
+                <i class="fa-regular fa-eye"></i>&nbsp; Admission Procedure
+            </li>
+            <li class="mybtn" id="contact-btn">
+                <i class="fa-regular fa-eye"></i>&nbsp; Contact
+            </li>
+        </ul>
+
+
     </li>
-    <li class="mybtn" id="criteria-btn">
-        <i class="fa-regular fa-eye"></i>&nbsp; Admission Criteria
-    </li>
-    <li class="mybtn" id="procedure-btn">
-        <i class="fa-regular fa-eye"></i>&nbsp; Admission Procedure
-    </li>
-    <li class="mybtn" id="contact-btn">
-        <i class="fa-regular fa-eye"></i>&nbsp; Contact
-    </li>
+    <li><a href="/canteen"><i class="fa-brands fa-slack"></i>
+        <h3> Canteen</h3>
+    </a></li>
+    <li><a href="/auditorium"><i class="fa-brands fa-slack"></i>
+        <h3> Auditorium</h3>
+    </a></li>
+    <li><a href="/classroom"><i class="fa-brands fa-slack"></i>
+        <h3> Classroom</h3>
+    </a></li>
 </ul>
+
+
+
+
 
 {% endblock %}
 
@@ -107,26 +135,26 @@ Hostel
 
 {% block myJS %}
 <script>
-    $('.mybtn').click(function(){
+    $('.mybtn').click(function () {
         $('.mybtn i').removeClass('fa-solid').addClass('fa-regular')
         $(this).children('i').toggleClass("fa-regular").addClass("fa-solid");
     })
 
     $("#administration-btn").click(function () {
-        $('#administration').fadeIn(2000).siblings().css("display","none");
+        $('#administration').fadeIn(2000).siblings().css("display", "none");
 
     })
     $("#criteria-btn").click(function () {
-        $('#criteria').fadeIn(2000).siblings().css("display","none");
-        
+        $('#criteria').fadeIn(2000).siblings().css("display", "none");
+
     })
     $("#procedure-btn").click(function () {
-        $('#procedure').fadeIn(2000).siblings().css("display","none");
-        
+        $('#procedure').fadeIn(2000).siblings().css("display", "none");
+
     })
     $("#contact-btn").click(function () {
-        $('#contact').fadeIn(2000).siblings().css("display","none");
-        
+        $('#contact').fadeIn(2000).siblings().css("display", "none");
+
     })
 </script>
 

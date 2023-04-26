@@ -23,6 +23,10 @@
 
     <!--  My CSS -->
     <link rel="stylesheet" href="{% static 'home/css/layout.css' %}">
+
+    {% block css %}
+
+    {% endblock %}
 </head>
 
 <body>
@@ -32,9 +36,9 @@
 
             <header>
                 <div class="logo">
-                    <a href="../index.html" title="logo made using designevo.com">
-                        <img src="{% static 'home/images/logo.png' %}" alt=""></a>
-                    <h3>ACI</h3>
+                    <a href="/" title="logo made using designevo.com">
+                        <img src="{% static 'home/images/logo.png' %}" alt="">
+                    <h3>ACI</h3></a>
                 </div>
             </header>
 
@@ -42,37 +46,6 @@
 
                 {% block nav_list %}
 
-                <!-- <h3>Sub Heading</h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-
-                <h3>Sub Heading</h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
-                <h3>Sub Heading</h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                </ul> -->
 
                 {% endblock %}
             </div>
@@ -82,78 +55,14 @@
         <div class="main-content">
             <h1>
                 {% block sub_heading %}
-                <!-- This is a heading -->
+
                 {% endblock %}
             </h1>
             {% block content %}
-            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, molestias cupiditate! Vero,
-                reiciendis. Molestiae minus inventore libero sunt quia accusantium, animi, enim accusamus tempora, ipsam
-                cum! Velit inventore nesciunt pariatur voluptate maxime nemo distinctio voluptates, corporis sunt
-                eligendi molestias assumenda quidem qui. Tempore distinctio officiis cupiditate porro laudantium! Vel,
-                tenetur.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, molestias cupiditate! Vero,
-                reiciendis. Molestiae minus inventore libero sunt quia accusantium, animi, enim accusamus tempora, ipsam
-                cum! Velit inventore nesciunt pariatur voluptate maxime nemo distinctio voluptates, corporis sunt
-                eligendi molestias assumenda quidem qui. Tempore distinctio officiis cupiditate porro laudantium! Vel,
-                tenetur.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, molestias cupiditate! Vero,
-                reiciendis. Molestiae minus inventore libero sunt quia accusantium, animi, enim accusamus tempora, ipsam
-                cum! Velit inventore nesciunt pariatur voluptate maxime nemo distinctio voluptates, corporis sunt
-                eligendi molestias assumenda quidem qui. Tempore distinctio officiis cupiditate porro laudantium! Vel,
-                tenetur.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, molestias cupiditate! Vero,
-                reiciendis. Molestiae minus inventore libero sunt quia accusantium, animi, enim accusamus tempora, ipsam
-                cum! Velit inventore nesciunt pariatur voluptate maxime nemo distinctio voluptates, corporis sunt
-                eligendi molestias assumenda quidem qui. Tempore distinctio officiis cupiditate porro laudantium! Vel,
-                tenetur.</p> -->
+            
             {% endblock %}
         </div>
     </div>
-
-    <!-- Footer -->
-    <!-- <section class="footer-container">
-        <hr>
-        <div class="footer">
-            <div class="quick-links">
-                <h2 class="h2-headings">Quick Links</h2>
-                <ul>
-                    <a href="../LayoutPage/index.html"><li>Our Astronauts</li></a>
-                    <a href="../LayoutPage/index.html"><li>Work with us</li></a>
-                    <a href="../LayoutPage/index.html"><li>Ranking</li></a>
-                    <a href="../LayoutPage/index.html"><li>Departments</li></a>
-                    <a href="../LayoutPage/index.html"><li>Faculty</li></a>
-                </ul>
-            </div>
-            <div class="explore">
-                <h2 class="h2-headings">Explore Planets</h2>
-                <ul>
-                    <a href="../LayoutPage/index.html"><li>LHS 475 b</li></a>
-                    <a href="../LayoutPage/index.html"><li>AS 209</li></a>
-                    <a href="../LayoutPage/index.html"><li>Ross 508b</li></a>
-                    <a href="../LayoutPage/index.html"><li>HD 110082 b</li></a>
-                    <a href="../LayoutPage/index.html"><li>WASP-189b</li></a>
-                </ul>
-            </div>
-            <div class="contact-us">
-                <h2 class="h2-headings">Contact Us</h2>
-                <ul>
-                    <a href="../LayoutPage/index.html"><li>Location: Out of your reach</li></a>
-                    <a href="../LayoutPage/index.html"><li>E-mail: admin@aci.com</li></a>
-                    <a href="../LayoutPage/index.html"><li>Phone: 99999 99999</li></a>
-                    <a href="../LayoutPage/index.html"><li>Some place</li></a>
-                    <a href="../LayoutPage/index.html"><li>Can't Connect?</li></a>
-                </ul>
-            </div>
-        </div>
-        <hr>
-    </section> -->
-
-
-    <!--Copytight-->
-    <!-- <section id="copyright">
-        <p>Copyright &copy; ACI, All rights reserved.</p>
-    </section> -->
-
 
 
     <!-- bootstrap js -->

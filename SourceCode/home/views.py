@@ -10,17 +10,41 @@ def index(request):
 def layout(request):
     return render(request, 'home/layout.html')
 
+def campus(request):
+    return render(request, 'home/campus.html')
+
 def hostel(request):
     return render(request, 'home/hostel.html')
 
-# def administration(request):
-#     return render(request, 'home/administration.html')
+def canteen(request):
+    return render(request, 'home/canteen.html')
 
-# def admission_criteria(request):
-#     return render(request, 'home/admission_criteria.html')
+def auditorium(request):
+    return render(request, 'home/auditorium.html')
 
-# def admission_procedure(request):
-#     return render(request, 'home/admission_procedure.html')
+def classroom(request):
+    return render(request, 'home/classroom.html')
 
-# def contact(request):
-#     return render(request, 'home/contact.html')
+def courses(request):
+    return render(request, 'home/courses.html')
+
+def syllabus(request):
+    return render(request, 'home/syllabus.html')
+
+def director(request):
+    return render(request, 'home/director.html')
+
+def alumni(request):
+    return render(request, 'home/alumni.html')
+
+def mission(request):
+    return render(request, 'home/mission.html')
+
+def vision(request):
+    return render(request, 'home/vision.html')
+
+def exhibition(request):
+    return render(request, 'home/exhibition.html')
+
+def events(request):
+    return render(request, 'home/events.html')
