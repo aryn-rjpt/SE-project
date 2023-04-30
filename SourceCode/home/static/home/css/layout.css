@@ -6,17 +6,18 @@
     color: white;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: inherit;
 }
 
-li{
+li {
     list-style: none;
 }
 
-body{    
+body {
     background-color: black;
+    
 }
 
 .h3-headings {
@@ -40,7 +41,7 @@ body{
     flex-direction: column;
     width: 25%;
     padding: 1vw;
-    /* height: 100vh; */
+    background: #000 url("../images/nav-header-bg.webp") no-repeat center center /cover;
 }
 
 header {
@@ -65,7 +66,7 @@ header a img {
     display: contents;
 }
 
-.navigation li{
+.navigation li {
     list-style: none;
     margin: 1vw 0;
     font-size: 1.2rem;
@@ -77,16 +78,29 @@ header a img {
 
 .main-content {
     width: 75%;
-    /* height: 100vh; */
+    background: #fff url("../images/main-content-bg.webp") no-repeat center center /cover;
     padding: 3vw 4vw;
 }
+
+.main-content>div p {
+    color: #230558;
+    font-size: 1.3rem;
+    background-color: #dac7dd;
+    padding: 1vw;
+    border: 2px solid;
+    border-radius: 12px;
+}
+
+
 
 .main-content h1 {
     margin-top: 3vw;
     margin-bottom: 3vw;
+    color: black;
+    font-family: 'Abril Fatface', cursive;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
 }
@@ -101,14 +115,14 @@ header a img {
     text-decoration: underline;
 }
 
-.temp{
+.temp {
     display: none;
 }
 
-.active{
+.active {
     display: block;
 }
 
-.siblings{
+.siblings {
     display: none;
 }

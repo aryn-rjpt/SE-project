@@ -19,10 +19,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
     <!--  My CSS -->
     <link rel="stylesheet" href="{% static 'home/css/layout.css' %}">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
     {% block css %}
 
@@ -38,7 +42,8 @@
                 <div class="logo">
                     <a href="/" title="logo made using designevo.com">
                         <img src="{% static 'home/images/logo.png' %}" alt="">
-                    <h3>ACI</h3></a>
+                        <h3>ACI</h3>
+                    </a>
                 </div>
             </header>
 
@@ -58,9 +63,11 @@
 
                 {% endblock %}
             </h1>
-            {% block content %}
-            
-            {% endblock %}
+            <div>
+                {% block content %}
+
+                {% endblock %}
+            </div>
         </div>
     </div>
 
@@ -70,8 +77,18 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 
+
     <!-- My JS -->
+
+    <script>
+        $(document).ready(function(){
+            if ($('.main-content').height()<500){
+                $('.main-content').css('height','100vh');
+            }
+        })
+    </script>
     {% block myJS %}
+    
     {% endblock %}
 
 
