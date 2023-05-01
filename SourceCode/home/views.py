@@ -48,3 +48,6 @@ def exhibition(request):
 
 def events(request):
     return render(request, 'home/events.html')
+
+def timetable(request):
+    return render(request, 'home/timetable.html')

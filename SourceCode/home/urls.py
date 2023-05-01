@@ -22,6 +22,7 @@ urlpatterns = [
     path("vision/", views.vision, name='vision'),
     path("exhibition/", views.exhibition, name='exhibition'),
     path("events/", views.events, name='events'),
+    path("timetable/", views.timetable, name='timetable'),
 
 ] 
 

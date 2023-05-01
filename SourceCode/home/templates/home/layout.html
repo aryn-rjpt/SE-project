@@ -25,12 +25,12 @@
     <!--  My CSS -->
     <link rel="stylesheet" href="{% static 'home/css/layout.css' %}">
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-
     {% block css %}
 
     {% endblock %}
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -81,14 +81,14 @@
     <!-- My JS -->
 
     <script>
-        $(document).ready(function(){
-            if ($('.main-content').height()<500){
-                $('.main-content').css('height','100vh');
+        $(document).ready(function () {
+            if ($('.main-content').height() < 600) {
+                $('.main-content').css('height', '100vh');
             }
         })
     </script>
     {% block myJS %}
-    
+
     {% endblock %}
 
 

@@ -1,6 +1,52 @@
 {% extends 'home/layout.html' %}
 
+{% load static %}
+
 {% block title %} Exhibition {% endblock %}
+
+
+{% block css %}
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+<style>
+    
+    .gallery {
+        height: fit-content;
+        position: relative;
+        background: #dac7dd;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #230558;
+        margin: 0;
+        padding: 0;
+        border: 2px solid;
+        border-radius: 12px;
+    }
+
+    .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+    }
+</style>
+
+
+{% endblock %}
+
 
 
 
@@ -26,8 +72,77 @@ Exhibition
 
 
 {% block content %}
+
 <p>Connect with the creative world, showcase your talent, absorb from other's work.
     add photos</p>
+
+<div class="gallery">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="{% static 'home\images\gallery\artgallery1.webp' %}" />
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'home\images\gallery\artgallery2.webp' %}" />
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'home\images\gallery\artgallery3.webp' %}" />
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'home\images\gallery\artgallery4.webp' %}" />
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'home\images\gallery\artgallery5.webp' %}" />
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'home\images\gallery\artgallery6.webp' %}" />
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'home\images\gallery\artgallery7.webp' %}" />
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'home\images\gallery\artgallery8.webp' %}" />
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'home\images\gallery\artgallery9.webp' %}" />
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'home\images\gallery\artgallery10.webp' %}" />
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'home\images\gallery\artgallery11.webp' %}" />
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
 {% endblock %}
 
 
+{% block myJS %}
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+</script>
+
+{% endblock %}
